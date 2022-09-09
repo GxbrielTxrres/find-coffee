@@ -1,5 +1,7 @@
 .container {
   margin-bottom: 6rem;
+  position: relative;
+  z-index: 2;
 }
 
 .title {
@@ -20,7 +22,7 @@
   color: var(--text-purple);
 }
 
-.subATitle {
+.subTitle {
   margin-top: 0.75rem;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -45,6 +47,12 @@
 
 .button:hover {
   background-color: var(--text-purple-dark);
+}
+
+.heroImage {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
 }
 
 /* small breakpoint */
@@ -80,6 +88,10 @@
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .heroImage {
+    right: 20%;
+  }
 }
 
 /** lg breakpoint **/
@@ -104,6 +116,10 @@
 
   .buttonWrapper {
     justify-content: flex-start;
+  }
+
+  .heroImage {
+    right: 20%;
   }
 }
 

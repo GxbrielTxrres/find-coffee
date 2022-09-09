@@ -21,6 +21,14 @@ export default function Home() {
           buttonText="View Stores Nearby"
           handleOnClick={handleOnBannerBtnClick}
         />
+        <div className={styles.heroImage}>
+          <Image
+            src="/static/mega-creator-removebg-preview.png"
+            height={400}
+            width={400}
+            className={styles.image}
+          ></Image>
+        </div>
       </main>
     </div>
   );
