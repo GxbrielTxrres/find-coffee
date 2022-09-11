@@ -46,8 +46,25 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+.glass {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: fit-content;
+}
+
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --text-purple: rgba(67, 56, 202, 1);
+  --text-purple-dark: rgba(79, 70, 229, 1);
+  --text-black: rgba(17, 24, 39, 1);
+  --text-white-100: rgba(229, 231, 235, 1);
 }
 
 @font-face {
@@ -69,11 +86,4 @@ button:focus {
   font-style: normal;
   font-weight: 700;
   src: url(/fonts/IBMPlexSans-Bold.ttf) format("truetype");
-}
-
-:root {
-  --text-purple: rgba(67, 56, 202, 1);
-  --text-purple-dark: rgba(79, 70, 229, 1);
-  --text-black: rgba(17, 24, 39, 1);
-  --text-white-100: rgba(229, 231, 235, 1);
 }

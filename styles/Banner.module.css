@@ -4,11 +4,17 @@
   z-index: 2;
 }
 
+.bannerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
 .title {
   letter-spacing: -0.025em;
   font-weight: 800;
   color: var(--text-black);
-
+  margin: -2px;
   font-size: 3rem;
   line-height: 1;
 }
@@ -18,7 +24,6 @@
 }
 
 .title2 {
-  display: block;
   color: var(--text-purple);
 }
 
@@ -37,6 +42,7 @@
 .button {
   cursor: pointer;
   color: white;
+  background-color: var(--text-purple);
   outline: 0;
   border: 0px;
 
@@ -47,12 +53,6 @@
 
 .button:hover {
   background-color: var(--text-purple-dark);
-}
-
-.heroImage {
-  position: absolute;
-  z-index: 1;
-  top: 0px;
 }
 
 /* small breakpoint */
@@ -88,10 +88,6 @@
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-
-  .heroImage {
-    right: 20%;
-  }
 }
 
 /** lg breakpoint **/
@@ -117,14 +113,13 @@
   .buttonWrapper {
     justify-content: flex-start;
   }
-
-  .heroImage {
-    right: 20%;
-  }
 }
 
 /** xl breakpoint **/
 @media (min-width: 1280px) {
+  .title {
+    margin: -5px;
+  }
   .title2 {
     display: inline;
   }
